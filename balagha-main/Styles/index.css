@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-size: cover;
+ background: url('../images/Village.png') no-repeat center center; */
+
+}
+
+.bg{
+  background: url('../images/Village.png') 100% 100% no-repeat;;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .bg{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .picutres img {
+    width: 100%; /* Make the image full width on smaller screens */
+  }
+}
+
+.button {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 55%;
+  margin-left: 10%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.button a {
+  color: #0E4070;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F2F5F8;
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #F2F5F8, 0 10px 0 #D8D8D8;
+  -moz-box-shadow: inset 0 1px 0 #F2F5F8, 0 10px 0 #D8D8D8;
+  box-shadow: inset 0 1px 0 #F2F5F8, 0 10px 0 #D8D8D8;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: #F2F5F8;
+
+  -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #D8D8D8;
+  -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #D8D8D8;
+  box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #D8D8D8;
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.pictures {
+  position: absolute;
+  bottom: 0;
+  right: 20%; 
+}
+
+.pictures img {
+  
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  width: 75%;
+  height: auto;
+  margin-bottom:0%
+}
+
+
+.ovall {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 55%;
+  margin-left: 10%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.ovall:before {
+  content: '';
+  display: block;
+  padding-top: 75%; /* This creates a pseudo-element with a fixed aspect ratio (adjust as needed) */
+}
+
+.ovall img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire oval */
+}
+
+.ovall .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #0E4070; /* Adjust text color as needed */
+  font-size: 1.5vw; /* Use viewport width for responsive font size */
+
+}
+
+.sound{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust text color as needed */
+  font-size: 1.5vw; /* Use viewport width for responsive font size */
+
+}
